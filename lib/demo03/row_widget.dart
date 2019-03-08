@@ -7,7 +7,7 @@ class RowDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('水平方向布局'),
+        title: Text(this.title),
       ),
       body: Row(
         children: <Widget>[
