@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(title: '页面跳转返回数据', home: FirstPage()));
-}
-
-class FirstPage extends StatelessWidget {
+class Demo0403 extends StatelessWidget {
+  final String title;
+  Demo0403({Key key, this.title}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('找小姐姐要电话'),
+        title: Text(this.title),
       ),
       body: Center(
         child: RouteButton(),
@@ -56,7 +54,7 @@ class XiaoJieJie extends StatelessWidget {
             RaisedButton(
               child: Text('小蛮腰小姐姐'),
               onPressed: () {
-                Navigator.pop(context, '大长腿:1511009999');
+                Navigator.pop(context, '小蛮腰:1511009999');
               },
             )
           ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class CardDemo extends StatelessWidget {
+  final String title;
+  CardDemo({Key key, this.title}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     var card = Card(
@@ -49,14 +49,12 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Card Demo'),
-        ),
-        body: Center(
-          child: card,
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(this.title),
+      ),
+      body: Center(
+        child: card,
       ),
     );
   }

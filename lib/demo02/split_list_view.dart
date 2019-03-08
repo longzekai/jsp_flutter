@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class MyList extends StatelessWidget{
 
+class SplitListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(

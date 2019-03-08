@@ -6,24 +6,17 @@ class Product {
   Product(this.title, this.description);
 }
 
-void main() {
-  runApp(MaterialApp(
-    title: '数据传递案例',
-    home: ProductList(
-        products:
-            List.generate(20, (i) => Product('商品 $i', '这是一个商品详情，编号为:$i'))),
-  ));
-}
-
-class ProductList extends StatelessWidget {
-  final List<Product> products;
-  ProductList({Key key, @required this.products}) : super(key: key);
+class Demo0402 extends StatelessWidget {
+  final List<Product> products = new List<Product>.generate(
+      20, (i) => Product('商品 $i', '这是一个商品详情，编号为:$i'));
+  final String title;
+  Demo0402({Key key, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('商品列表'),
+        title: Text(this.title),
       ),
       body: ListView.builder(
         itemCount: products.length,
