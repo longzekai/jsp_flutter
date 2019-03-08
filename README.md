@@ -1,10 +1,8 @@
-# jsp_flutter
+# 技术胖基础教程视频练习demo合集
 
-A new Flutter application.
+demo合集Gif展示
 
 ![](images/demo.gif)
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+# 感谢
+感谢技术胖的无私奉献，也希望能帮助到有用的朋友。
