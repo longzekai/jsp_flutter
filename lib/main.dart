@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: "Hello Flutter Again",
       home: new Scaffold(
         appBar: AppBar(
-          title: Text('技术胖Flutter教程Demo合集'),
+          title: Text('Flutter Demo合集'),
         ),
         body: ListDemo(),
       ),
