@@ -1,14 +1,27 @@
 import 'package:flutter/material.dart';
 
-class MemberCenter extends StatelessWidget {
-  final String title;
+class MemberCenter extends StatefulWidget {
+  _MemberCenterState createState() => _MemberCenterState();
+}
 
-  MemberCenter({Key key, this.title}) : super(key: key);
+class _MemberCenterState extends State<MemberCenter> {
   var userAvatar;
   var userName;
-
-  final List<String> titles = ['我的消息', '历史记录', '我的问题', '我的奖励', '我的成就', '设置'];
-
+  final List<String> titles = [
+    '我的消息',
+    '历史记录',
+    '我的问题',
+    '我的问题',
+    '我的问题',
+    '我的奖励',
+    '我的成就',
+    '我的奖励',
+    '我的奖励',
+    '我的奖励',
+    '我的奖励',
+    '我的成就',
+    '设置'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,8 +31,14 @@ class MemberCenter extends StatelessWidget {
         slivers: <Widget>[
           SliverAppBar(
             pinned: false,
-            expandedHeight: 200.0,
+            expandedHeight: 240.0,
             iconTheme: IconThemeData(color: Colors.transparent),
+            title: Text('个人中心'),
+            floating: true,
+            centerTitle: true,
+            forceElevated: true,
+            snap: false,
+            automaticallyImplyLeading: false,
             backgroundColor: Colors.green,
             flexibleSpace: InkWell(
               onTap: () {
@@ -32,11 +51,11 @@ class MemberCenter extends StatelessWidget {
                       ? Image.asset(
                           "images/ic_avatar_default.png",
                           width: 60.0,
-                          height: 60.0,
+                          height: 47.0,
                         )
                       : Container(
                           width: 60.0,
-                          height: 60.0,
+                          height: 47.0,
                           decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.transparent,
