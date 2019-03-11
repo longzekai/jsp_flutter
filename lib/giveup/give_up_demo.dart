@@ -2,11 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:jsp_flutter/flutter_list_demo.dart';
 import 'package:jsp_flutter/giveup/login_page.dart';
 import 'package:jsp_flutter/giveup/member_center.dart';
+import 'package:jsp_flutter/giveup/scale_imge.dart';
 
 class GiveUpDemo extends StatelessWidget {
   final List<ListDemoBean> giveUpList = [
     ListDemoBean('登录界面', LoginPage()),
     ListDemoBean('个人中心界面', MemberCenter()),
+    ListDemoBean(
+        '图片缩放',
+        ScaleImageDemo(
+          title: '图片缩放',
+        )),
   ];
 
   final String title;
