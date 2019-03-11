@@ -43,6 +43,7 @@ flutter:
   assets:
     - images/test.jpg
     - images/oschina.png
+    - images/ic_avatar_default.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
