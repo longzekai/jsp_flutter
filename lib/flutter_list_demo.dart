@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jsp_flutter/chinese/ChineseWeb.dart';
 import 'package:jsp_flutter/demo01/first_demo.dart';
 import 'package:jsp_flutter/demo02/second_demo.dart';
 import 'package:jsp_flutter/demo03/three_demo.dart';
 import 'package:jsp_flutter/demo04/forth_demo.dart';
 import 'package:jsp_flutter/giveup/give_up_demo.dart';
-import 'package:jsp_flutter/giveup/login_page.dart';
 import 'package:jsp_flutter/higherUI/higher_ui_demo.dart';
 
 class ListDemoBean {
@@ -26,7 +26,9 @@ class ListDemo extends StatelessWidget {
         GiveUpDemo(
           title: '从入门到奔溃',
         )),
+    ListDemoBean('Flutter中文网', ChineseWeb())
   ];
+
 
   @override
   Widget build(BuildContext context) {
