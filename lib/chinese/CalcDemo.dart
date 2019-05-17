@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'PageRouteTest.dart';
 
 class CalcDemo extends StatelessWidget {
   final String title;
@@ -30,7 +31,7 @@ class Calc extends StatefulWidget {
 class _CalcState extends State<Calc> {
   int _conuter = 0;
 
-  void _increateConuter() {
+  void _increaterConuter() {
     setState(() {
       _conuter++;
     });
@@ -48,12 +49,24 @@ class _CalcState extends State<Calc> {
             Text(
               '$_conuter',
               style: Theme.of(context).textTheme.display1,
+            ),
+            FlatButton(
+              child: Text("路由跳转"),
+              textColor: Colors.blue,
+              onPressed: (){
+//                Navigator.push(context, MaterialPageRoute(builder: (context){
+//                    return PageRouteTest();
+//                }));
+
+              // 采用路由表的方式
+                Navigator.pushNamed(context, "page_route");
+              },
             )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _increateConuter,
+        onPressed: _increaterConuter,
         tooltip: 'Increment',
         child: new Icon(Icons.add),
       ),

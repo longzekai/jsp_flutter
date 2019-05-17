@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jsp_flutter/flutter_list_demo.dart';
+import 'package:jsp_flutter/chinese/PageRouteTest.dart';
+import 'package:jsp_flutter/chinese/EchoRoute.dart';
 
 void main() => runApp(new MyApp());
 
@@ -17,6 +19,10 @@ class MyApp extends StatelessWidget {
         ),
         body: ListDemo(),
       ),
+      routes: {
+        "page_route": (context)=> PageRouteTest(),
+        "echo_route": (context)=> EchoRoute(),
+      },
     );
   }
 }
