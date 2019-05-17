@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:jsp_flutter/flutter_list_demo.dart';
 import 'CalcDemo.dart';
 import 'EchoRoute.dart';
+import 'RandomWordsWidget.dart';
 
 class ChineseWeb extends StatelessWidget {
   final List<ListDemoBean> demos = [
     ListDemoBean('计数器应用示例', CalcDemo(title: "计数器应用示例")),
-    ListDemoBean('采用路由表的方式传参', EchoRoute())
+    ListDemoBean('采用路由表的方式传参', EchoRoute()),
+    ListDemoBean('导包随机英文名', RandomWordsWidget()),
   ];
 
   final String title;
