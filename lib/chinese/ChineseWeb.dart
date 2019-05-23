@@ -4,6 +4,9 @@ import 'CalcDemo.dart';
 import 'EchoRoute.dart';
 import 'RandomWordsWidget.dart';
 import 'BaseWidgets.dart';
+import 'TapboxA.dart';
+import 'ParentWidget.dart';
+import 'TapboxB.dart';
 
 class ChineseWeb extends StatelessWidget {
   final List<ListDemoBean> demos = [
@@ -11,6 +14,8 @@ class ChineseWeb extends StatelessWidget {
     ListDemoBean('采用路由表的方式传参', EchoRoute()),
     ListDemoBean('导包随机英文名', RandomWordsWidget()),
     ListDemoBean('基础类演示', BaseWidgets(text: "基础类演示",)),
+    ListDemoBean('状态管理演示_管理自身状态', TapboxA()),
+    ListDemoBean('父widget管理子widget的state', TapboxB()),
   ];
 
   final String title;
