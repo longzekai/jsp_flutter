@@ -8,6 +8,7 @@ import 'package:jsp_flutter/chinese/base/TapboxA.dart';
 import 'package:jsp_flutter/chinese/base/TextDemo.dart';
 import 'package:jsp_flutter/chinese/base/TapboxB.dart';
 import 'package:jsp_flutter/chinese/base/BaseButton.dart';
+import 'package:jsp_flutter/chinese/base/ImageDemo.dart';
 
 class ChineseWeb extends StatelessWidget {
   final List<ListDemoBean> demos = [
@@ -19,6 +20,7 @@ class ChineseWeb extends StatelessWidget {
     ListDemoBean('父widget管理子widget的state', TapboxB()),
     ListDemoBean('文本及样式', TextDemo()),
     ListDemoBean('Button演示', BaseButton()),
+    ListDemoBean('图片及ICON演示', ImageDemo()),
   ];
 
   final String title;

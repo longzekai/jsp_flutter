@@ -45,10 +45,10 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #    - images/a_dot_ham.jpeg
   assets:
-    - images/test.jpg
-    - images/oschina.png
-    - images/ic_avatar_default.png
-    - images/arron.jpg
+  - assets/images/test.jpg
+  - assets/images/oschina.png
+  - assets/images/ic_avatar_default.png
+  - assets/images/arron.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
