@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:jsp_flutter/chinese/base/ParentWidget.dart';
 
-
+// 测试没有效果，暂时不知道如何解决，如果你有办法，请将它完善。
 class TapboxB extends StatelessWidget {
 
   TapboxB({Key key, this.active:false, @required this.onChanged }):super(key: key);
