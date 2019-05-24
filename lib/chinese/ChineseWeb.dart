@@ -5,7 +5,7 @@ import 'EchoRoute.dart';
 import 'RandomWordsWidget.dart';
 import 'BaseWidgets.dart';
 import 'TapboxA.dart';
-import 'ParentWidget.dart';
+import 'TextDemo.dart';
 import 'TapboxB.dart';
 
 class ChineseWeb extends StatelessWidget {
@@ -16,6 +16,7 @@ class ChineseWeb extends StatelessWidget {
     ListDemoBean('基础类演示', BaseWidgets(text: "基础类演示",)),
     ListDemoBean('状态管理演示_管理自身状态', TapboxA()),
     ListDemoBean('父widget管理子widget的state', TapboxB()),
+    ListDemoBean('文本及样式', TextDemo()),
   ];
 
   final String title;
