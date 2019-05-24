@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:jsp_flutter/flutter_list_demo.dart';
-import 'CalcDemo.dart';
-import 'EchoRoute.dart';
-import 'RandomWordsWidget.dart';
-import 'BaseWidgets.dart';
-import 'TapboxA.dart';
-import 'TextDemo.dart';
-import 'TapboxB.dart';
+import 'package:jsp_flutter/chinese/base/CalcDemo.dart';
+import 'package:jsp_flutter/chinese/base/EchoRoute.dart';
+import 'package:jsp_flutter/chinese/base/RandomWordsWidget.dart';
+import 'package:jsp_flutter/chinese/base/BaseWidgets.dart';
+import 'package:jsp_flutter/chinese/base/TapboxA.dart';
+import 'package:jsp_flutter/chinese/base/TextDemo.dart';
+import 'package:jsp_flutter/chinese/base/TapboxB.dart';
 
 class ChineseWeb extends StatelessWidget {
   final List<ListDemoBean> demos = [

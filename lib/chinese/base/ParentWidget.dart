@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'TapboxB.dart';
+import 'package:jsp_flutter/chinese/base/TapboxB.dart';
 
 class ParentWidget extends StatefulWidget {
   @override

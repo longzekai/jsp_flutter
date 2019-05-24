@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ParentWidget.dart';
+import 'package:jsp_flutter/chinese/base/ParentWidget.dart';
 
 
 class TapboxB extends StatelessWidget {
