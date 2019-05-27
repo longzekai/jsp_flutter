@@ -54,9 +54,11 @@ class _FormTestRouteState extends State<FormTestRoute> {
                       padding: EdgeInsets.all(10.0),
                       child: Row(
                         children: <Widget>[
-                          RaisedButton(
+                          Expanded(
+                              child: RaisedButton(
                             onPressed: () {
-                              if((_formKey.currentState as FormState).validate()) {
+                              if ((_formKey.currentState as FormState)
+                                  .validate()) {
                                 //验证通过提交数据
                                 print('验证通过');
                               } else {
@@ -66,7 +68,7 @@ class _FormTestRouteState extends State<FormTestRoute> {
                             child: Text('登录'),
                             color: Theme.of(context).primaryColor,
                             textColor: Colors.white,
-                          )
+                          ))
                         ],
                       ),
                     )
