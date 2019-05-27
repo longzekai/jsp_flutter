@@ -7,7 +7,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   var leftRightPadding = 30.0;
   var topBottomPadding = 4.0;
-  static const LOGO = 'images/oschina.png';
+  static const LOGO = 'assets/images/oschina.png';
 
   var hintTips = TextStyle(fontSize: 15.0, color: Colors.black26);
   var _userNameController = TextEditingController();

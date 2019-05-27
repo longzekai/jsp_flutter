@@ -18,72 +18,74 @@ class ImageDemo extends StatelessWidget {
       body: Center(
         child: Container(
           margin: EdgeInsets.all(20.0),
-          child: Column(
-            children: <Widget>[
-              Text(
-                '从asset中加载图片',
-                style: TextStyle(
-                  fontSize: 32.0,
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Text(
+                  '从asset中加载图片',
+                  style: TextStyle(
+                    fontSize: 32.0,
+                  ),
                 ),
-              ),
-              Container(
-                height: 10.0,
-              ),
-              Image(image: AssetImage("assets/images/oschina.png")),
-              Image.asset('assets/images/oschina.png'),
-              Container(
-                height: 10.0,
-              ),
-              Text(
-                '网络加载图片',
-                style: TextStyle(
-                  fontSize: 32.0,
+                Container(
+                  height: 10.0,
                 ),
-              ),
-              Image.network(
-                  'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2692809760,3266574367&fm=26&gp=0.jpg'),
-              Container(
-                height: 10.0,
-              ),
-              Text(
-                '矢量图片文本展示',
-                style: TextStyle(
-                  fontSize: 32.0,
+                Image(image: AssetImage("assets/images/oschina.png")),
+                Image.asset('assets/images/oschina.png'),
+                Container(
+                  height: 10.0,
                 ),
-              ),
-              Text(
-                icons,
-                style: TextStyle(
-                    fontFamily: "MaterialIcons",
-                    fontSize: 68.0,
-                    color: Colors.green),
-              ),
-              Text(
-                '矢量图片Icon展示',
-                style: TextStyle(
-                  fontSize: 32.0,
+                Text(
+                  '网络加载图片',
+                  style: TextStyle(
+                    fontSize: 32.0,
+                  ),
                 ),
-              ),
-              Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(
-                      Icons.accessible,
-                      color: Colors.green,
-                      size: 66,
-                    ),
-                    Icon(
-                      Icons.error,
-                      color: Colors.green,
-                      size: 66,
-                    ),
-                    Icon(
-                      Icons.fingerprint,
-                      color: Colors.green,
-                      size: 66,
-                    ),
-                  ])
-            ],
+                Image.network(
+                    'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2692809760,3266574367&fm=26&gp=0.jpg'),
+                Container(
+                  height: 10.0,
+                ),
+                Text(
+                  '矢量图片文本展示',
+                  style: TextStyle(
+                    fontSize: 32.0,
+                  ),
+                ),
+                Text(
+                  icons,
+                  style: TextStyle(
+                      fontFamily: "MaterialIcons",
+                      fontSize: 68.0,
+                      color: Colors.green),
+                ),
+                Text(
+                  '矢量图片Icon展示',
+                  style: TextStyle(
+                    fontSize: 32.0,
+                  ),
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(
+                        Icons.accessible,
+                        color: Colors.green,
+                        size: 66,
+                      ),
+                      Icon(
+                        Icons.error,
+                        color: Colors.green,
+                        size: 66,
+                      ),
+                      Icon(
+                        Icons.fingerprint,
+                        color: Colors.green,
+                        size: 66,
+                      ),
+                    ])
+              ],
+            ),
           ),
         ),
       ),

@@ -21,6 +21,7 @@ class ChineseWeb extends StatelessWidget {
     ListDemoBean('文本及样式', TextDemo()),
     ListDemoBean('Button演示', BaseButton()),
     ListDemoBean('图片及ICON演示', ImageDemo()),
+    ListDemoBean('单选开关和复选框', ImageDemo()),
   ];
 
   final String title;

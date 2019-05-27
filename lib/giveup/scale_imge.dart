@@ -15,7 +15,7 @@ class ScaleImageDemo extends StatelessWidget {
       body: Container(
         child: DragScaleContainer(
           doubleTapStillScale: true,
-          child: Image.asset('images/arron.jpg'),
+          child: Image.asset('assets/images/arron.jpg'),
         ),
       ),
     );

@@ -49,7 +49,7 @@ class _MemberCenterState extends State<MemberCenter> {
                 children: <Widget>[
                   userAvatar == null
                       ? Image.asset(
-                          "images/ic_avatar_default.png",
+                          "assets/images/ic_avatar_default.png",
                           width: 60.0,
                           height: 47.0,
                         )
