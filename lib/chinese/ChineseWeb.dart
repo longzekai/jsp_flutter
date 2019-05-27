@@ -10,6 +10,8 @@ import 'package:jsp_flutter/chinese/base/TapboxB.dart';
 import 'package:jsp_flutter/chinese/base/BaseButton.dart';
 import 'package:jsp_flutter/chinese/base/ImageDemo.dart';
 import 'package:jsp_flutter/chinese/base/SwitchAndCheckBoxTestRoute.dart';
+import 'package:jsp_flutter/chinese/base/TextFieldDemo.dart';
+import 'package:jsp_flutter/chinese/base/FormTestRoute.dart';
 
 class ChineseWeb extends StatelessWidget {
   final List<ListDemoBean> demos = [
@@ -23,6 +25,8 @@ class ChineseWeb extends StatelessWidget {
     ListDemoBean('Button演示', BaseButton()),
     ListDemoBean('图片及ICON演示', ImageDemo()),
     ListDemoBean('单选开关和复选框', SwitchAndCheckBoxTestRoute()),
+    ListDemoBean('输入框演示', TextFieldDemo()),
+    ListDemoBean('表单Form演示', FormTestRoute()),
   ];
 
   final String title;
